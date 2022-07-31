@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+    color: #ddd;
+    font-family: 'Outfit', sans-serif;
+}
+
+.box {
+    padding: 20px;
+    background-color: #333;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.descricao {
+    width: 200px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.duracao {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.barra {
+    width: 200px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    width: 0%;
+    height: 6px;
+    background-color: #333;
+}
+
+.ponto {
+    width: 15px;
+    height: 15px;
+    border-radius: 360px;
+    background-color: #eee;
+    margin-left: -2px;
+}
+
+.tempo {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.player {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.tamanho {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.tamanho.seta{
+    width: 25px;
+    height: 25px;
+}
+
+.btn-pause {
+    display: none;
+}
