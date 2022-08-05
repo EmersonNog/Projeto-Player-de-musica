@@ -42,7 +42,7 @@ document.querySelector(".btn-play").addEventListener('click', playMusic);
 
 document.querySelector(".btn-pause").addEventListener('click', pauseMusic);
 
-music.addEventListener("timeupdate", attBar)
+music.addEventListener("timeupdate", attBar);
 
 window.onload = duration;
 
@@ -71,8 +71,8 @@ function renderMusic(index) {
         name_music.textContent = musics[index].title;
         name_artistic.textContent = musics[index].artistic;
         imagem.src = musics[index].img;
-        celular.src = musics[index].cell;
-        camera.src = music[index].cam;
+        celular = musics[index].cell;
+        camera = musics[index].cam;
         durationMusic.textContent = secondsToMinutes(Math.floor(music.duration));
         playMusic();
     });
