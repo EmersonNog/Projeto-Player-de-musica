@@ -3,31 +3,37 @@ let musics = [
         title: 'As You Fade Away', 
         artistic: 'NEFFEX', 
         src: 'src/assets/music/As You Fade Away - NEFFEX.mp3', 
-        img: 'src/assets/imagem/1 - As you.jpg'
+        img: 'src/assets/imagem/1 - As you.jpg',
+        cell: 'src/assets/imagem/celular.png',
+        cam: 'src/assets/imagem/cam.png'
     },
 
     {
         title: 'Go!', 
         artistic: 'NEFFEX', 
         src: 'src/assets/music/Go! - NEFFEX.mp3', 
-        img: 'src/assets/imagem/2 - Go.jpg'
+        img: 'src/assets/imagem/2 - Go.jpg',
+        cell: 'src/assets/imagem/celular.png',
+        cam: 'src/assets/imagem/cam.png'
     },
 
     {
         title: 'The Itch', 
         artistic: 'NEFFEX', 
         src: 'src/assets/music/The Itch - NEFFEX.mp3', 
-        img: 'src/assets/imagem/3- Itch.jpg'
+        img: 'src/assets/imagem/3- Itch.jpg',
+        cell: 'src/assets/imagem/celular.png',
+        cam: 'src/assets/imagem/cam.png'
     }
 ];
 
 let music = document.querySelector("audio");
-
 let indexMusic = 0;
-
 let durationMusic = document.querySelector(".fim");
 
-let imagem = document.querySelector("img");
+let imagem = document.querySelector("#img_player");
+let celular = document.querySelector(".celular");
+let camera = document.querySelector(".camera");
 let name_music = document.querySelector(".descricao h2");
 let name_artistic = document.querySelector(".descricao i");
 
@@ -46,6 +52,7 @@ document.querySelector(".anterior").addEventListener('click', () => {
         indexMusic = 2;
     }
     renderMusic(indexMusic);
+    playMusic();
 });
 
 document.querySelector(".proxima").addEventListener('click', () => {
@@ -54,6 +61,7 @@ document.querySelector(".proxima").addEventListener('click', () => {
         indexMusic = 0;
     }
     renderMusic(indexMusic);
+    playMusic();
 });
 
 //funcoes
@@ -63,6 +71,8 @@ function renderMusic(index) {
         name_music.textContent = musics[index].title;
         name_artistic.textContent = musics[index].artistic;
         imagem.src = musics[index].img;
+        celular.src = musics[index].cell;
+        camera.src = music[index].cam;
         durationMusic.textContent = secondsToMinutes(Math.floor(music.duration));
         playMusic();
     });

@@ -6,23 +6,45 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(75, 51, 51);
     color: #ddd;
     font-family: 'Outfit', sans-serif;
 }
 
-.box {
-    padding: 20px;
-    background-color: #333;
+.celular {
+    margin-bottom: -350px;
+    width: 240px;
+    height: 432px;
 }
 
-img {
-    width: 200px;
-    height: 300px;
+.box {
+    padding: 20px;
+    max-height: 372px;
+    max-width: 170px;
+    background-color: #333;
+    margin-right: 6px;
+    margin-top: -12px;
+    border-radius: 22px;
+}
+
+.cam {
+    margin-top: -80px;
+    max-width: 100px;
+    z-index: 1;
+}
+
+#img_player {
+    width: 150px;
+    height: 195px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .descricao {
     width: 200px;
+    font-size: 12px;
 }
 
 h2 {
@@ -35,7 +57,7 @@ h2 {
 }
 
 .barra {
-    width: 200px;
+    width: 170px;
     height: 6px;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -60,8 +82,9 @@ progress {
 
 .tempo {
     display: flex;
-    width: 200px;
+    width: 173px;
     justify-content: space-between;
+    font-size: 12px;
 }
 
 .player {
@@ -69,7 +92,7 @@ progress {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 5px;
+    margin-left: -13px;
 }
 
 .tamanho {
